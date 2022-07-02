@@ -7,7 +7,7 @@
     <div class="flex mx-5 xl:mx-64 lg:mx-32 md:mx-14 my-5 sm:mt-8">
       <!-- keyup: saat tombol di keyboard di angkat -->
       <input v-model.lazy="searchInput" type="text" placeholder="Search" class="h-10 py-2 px-3 " @keyup.enter="$fetch">
-      <button v-show="searchInput !== ''" class="bg-orange-500 py-2 px-3 h-10 rounded-r-lg font-bold text-white" @click="clearSearch">Clear Search</button>
+      <button v-show="searchInput !== ''" class="bg-orange-500 py-2 px-3 h-10 rounded-r-lg font-semibold text-white" @click="clearSearch">Clear Search</button>
     </div>
 
     <!-- Loading -->
