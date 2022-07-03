@@ -25,12 +25,18 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  target: 'static',
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxt/postcss8',
+    '@nuxtjs/pwa',
+    '@nuxt/image',
   ],
+  image: {
+    // Options
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -53,4 +59,14 @@ export default {
       },
     },
   },
+
+  pwa: {
+    icon: true,
+  },
+  manifest: {
+    name: 'Movie list in all country',
+    short_name: 'Movie list',
+    lang: 'en',
+    display: 'standalone',
+  }
 }
